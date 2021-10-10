@@ -1,0 +1,3 @@
+
+
+file -C -m 42 string 42 42

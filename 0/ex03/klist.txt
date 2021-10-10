@@ -1,0 +1,4 @@
+Name                  Cache name                                 Expires
+* sungjuki@42SEOUL.KR   API:732C69BE-885B-4B20-A23F-D662E05F508E   Oct  5 02:42:47 2021
+  sungjuki@42SEOUL.KR   API:5292D691-897B-4E5A-89C4-8B06C31A75B5   Oct  5 00:33:56 2021
+  sungjuki@42SEOUL.KR   API:1DE1D728-D499-4530-AF67-E2FF10F363A9   Oct  4 23:43:16 2021
