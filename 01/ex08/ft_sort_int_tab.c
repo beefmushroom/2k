@@ -6,7 +6,7 @@
 /*   By: sungjuki <sungjuki@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 20:08:52 by sungjuki          #+#    #+#             */
-/*   Updated: 2021/10/11 20:25:27 by sungjuki         ###   ########.fr       */
+/*   Updated: 2021/10/11 21:12:13 by sungjuki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,23 @@
 void	ft_sort_int_tab(int *tab, int size)
 {
 	int	idx;
-	int tmp[1];
-	int pt_size;
-	int pt;
+	int	pt;
+	int	tmp;
 
-	pt_size = size-1;
-	pt = 0;
 	idx = 0;
-	while(pt < pt_size)
+	while (idx < size - 1)
 	{	
-		idx = pt;
-		while (size > 0)
-		{	
-			tmp[0] = tab[idx];
-			if (tab[idx] > tab[idx+1])
+		pt = 0;
+		while (pt < size - 1 - idx)
+		{
+			if (tab[pt] > tab[pt + 1])
 			{
-				tab[idx] = tab[idx+1];
-				tab[idx+1] = tmp[0];
+				tmp = tab[pt];
+				tab[pt] = tab[pt + 1];
+				tab[pt + 1] = tmp;
 			}
-			idx++;
-			size--;
+			pt++;
 		}
-		pt++;
+		idx++;
 	}
 }
