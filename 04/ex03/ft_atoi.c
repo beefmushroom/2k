@@ -6,25 +6,11 @@
 /*   By: sungjuki <sungjuki@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 23:32:47 by sungjuki          #+#    #+#             */
-/*   Updated: 2021/10/14 23:59:16 by sungjuki         ###   ########.fr       */
+/*   Updated: 2021/10/15 07:54:10 by sungjuki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-int	ws_check(char str)
-{
-	char	*check;
-
-	check = "\t\n\v\f\r ";
-	while (*check)
-	{
-		if (str == *check)
-			return (1);
-		check++;
-	}
-	return (0);
-}
 
 int	ft_atoi(char *str)
 {
@@ -33,7 +19,7 @@ int	ft_atoi(char *str)
 
 	num = 0;
 	sign = 1;
-	while (ws_check(*str))
+	while ((*str >= 9 && *str <= 13) || *str == ' ')
 		str++;
 	while (*str == '+' || *str == '-')
 	{
