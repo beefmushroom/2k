@@ -6,7 +6,7 @@
 /*   By: sungjuki <sungjuki@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 16:01:00 by sungjuki          #+#    #+#             */
-/*   Updated: 2021/10/14 16:02:05 by sungjuki         ###   ########.fr       */
+/*   Updated: 2021/10/16 17:07:06 by sungjuki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	{
 		return (src_len + size);
 	}
-	while (src[idx] && (idx < size - dest_len - 1))
+	while (src[idx] && (idx + dest_len + 1 < size))
 	{
 		dest[dest_len + idx] = src[idx];
 		idx++;
